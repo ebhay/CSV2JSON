@@ -2,22 +2,24 @@
 ![thumbnail](./public/assets/landingPage-edee0d51-9f68-4dbc-9c91-50395daf1b38)
 ## 🗂️ Description
 
-The CSV2JSON Converter is a web application designed to convert CSV (Comma Separated Values) data to JSON (JavaScript Object Notation) format. This tool is particularly useful for developers and data analysts who need to work with data in JSON format but have it available in CSV. The application provides a user-friendly interface for uploading CSV files, pasting CSV data, or using sample data to generate equivalent JSON.
+The CSV2JSON Converter is a web application designed to convert CSV (Comma Separated Values) files to JSON (JavaScript Object Notation) format. This tool is useful for developers, data analysts, and anyone who needs to work with data in both CSV and JSON formats. The application provides a simple and intuitive interface for uploading CSV files, selecting delimiter options, and downloading the converted JSON data.
+
+The CSV2JSON Converter is built using modern web technologies, including React, Vite, and Tailwind CSS, ensuring a fast, responsive, and user-friendly experience.
 
 ## ✨ Key Features
 
-### Core Functionality
-- **CSV to JSON Conversion**: The application takes CSV data as input and converts it into JSON format.
-- **File Upload**: Users can upload CSV files directly to the application for conversion.
-- **CSV Input**: A textarea is provided for users to paste their CSV data manually.
-- **Sample Data**: A sample CSV data option is available for users to test the conversion feature.
+### Core Features
+
+* **CSV to JSON Conversion**: Convert CSV files to JSON format with ease
+* **Delimiter Selection**: Choose from various delimiter options, including auto-detection
+* **File Upload**: Upload CSV files directly or paste CSV data into the application
+* **JSON Output**: Display and download converted JSON data
 
 ### User Interface
-- **Json Output**: The converted JSON data is displayed in a readable format.
-- **Copy and Download**: Users can copy the JSON data to their clipboard or download it as a JSON file.
 
-### Settings
-- **Auto-Detect Settings**: The application allows users to auto-detect delimiters and select from a list of common delimiters.
+* **Sample Data**: View sample CSV data to get started
+* **Drop Zone**: Easily upload CSV files or click to browse
+* **Auto-Detect Settings**: Select delimiter and auto-detect settings for accurate conversion
 
 ## 🗂️ Folder Structure
 
@@ -27,9 +29,9 @@ src-->components;
 src-->utils;
 components-->CsvInput;
 components-->JsonOutput;
-components-->SampleData;
 components-->DropZone;
 components-->AutoDetectSettings;
+components-->SampleData;
 utils-->useCsvJson;
 src-->App;
 src-->main.jsx;
@@ -37,41 +39,40 @@ src-->main.jsx;
 
 ## 🛠️ Tech Stack
 
-![Vite](https://img.shields.io/badge/Vite-646cff?logo=vite&logoColor=white&style=for-the-badge)
 ![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=white&style=for-the-badge)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?logo=tailwind-css&logoColor=white&style=for-the-badge)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=white&style=for-the-badge)
+![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white&style=for-the-badge)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=white&style=for-the-badge)
 
 ## ⚙️ Setup Instructions
 
-To run the CSV2JSON Converter locally, follow these steps:
+To run the CSV2JSON Converter locally:
 
-1. **Clone the Repository**:
-   ```bash
-git clone https://github.com/ebhay/CSV2JSON.git
-```
-2. **Navigate to the Project Directory**:
-   ```bash
-cd CSV2JSON
-```
-3. **Install Dependencies**:
-   ```bash
-npm install
-```
-4. **Start the Development Server**:
-   ```bash
-npm run dev
-```
-5. **Open the Application**:
-   Navigate to `http://localhost:5173` in your web browser to use the application.
+* Clone the repository: `git clone https://github.com/ebhay/CSV2JSON.git`
+* Install dependencies: `npm install`
+* Start the application: `npm run dev`
+* Open your web browser and navigate to `http://localhost:5173`
 
-## 🤖 GitHub Actions
+## 📁 Configuration Files
 
-The repository utilizes GitHub Actions for continuous integration and deployment. Workflows are set up to:
-- **Lint and Format Code**: Run ESLint and format code on push events.
-- **Build and Deploy**: Automatically build and deploy the application to a hosting platform on successful pull requests to the main branch.
+The application uses the following configuration files:
 
-No specific workflow files are included in the basic template, but you can find them in the `.github/workflows` directory of the repository.
+* `vite.config.js`: Vite build tool configuration
+* `eslint.config.js`: ESLint configuration for JavaScript linting
+* `.gitignore`: Git ignore file for ignoring specific files and directories
+
+## 🤝 GitHub Actions
+
+The repository uses GitHub Actions for automated workflows. The workflow files are located in the `.github/workflows` directory.
+
+## 📝 Code Structure
+
+The application code is organized into the following directories:
+
+* `src`: Source code directory
+	+ `components`: React component directory
+	+ `utils`: Utility function directory
+	+ `App.jsx`: Main application component
+	+ `main.jsx`: Main entry point of the application
 
 
 
@@ -79,7 +80,7 @@ No specific workflow files are included in the basic template, but you can find 
 <div align="center">
 <img src="https://avatars.githubusercontent.com/u/111756624?v=4" width="120" />
 <h3>Abhay Gupta</h3>
-<p>Passionate developer and lifelong learner, breaking and rebuilding code to craft seamless interactions.</p>
+<p>Passionate developer & lifelong learner, seeking to break boundaries through code.</p>
 </div>
 <br>
 <p align="right">
