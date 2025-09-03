@@ -96,7 +96,9 @@ function App() {
           </div>
         </div>
       </main>
-      <footer className="pb-8 pt-2 text-center text-xs text-slate-600">Built with React, Vite, and Tailwind</footer>
+      <footer className="pb-8 pt-2 text-center text-xs text-slate-600">
+  <strong className="font-semibold">Made with <span role="img" aria-label="love">❤️</span> by <a href="https://github.com/ebhay/" target="_blank" rel="noopener noreferrer" className="underline hover:text-orange-500">ebhay</a></strong>
+      </footer>
     </div>
   );
 }
