@@ -2,78 +2,76 @@
 ![thumbnail](./public/assets/landingPage-edee0d51-9f68-4dbc-9c91-50395daf1b38)
 ## 🗂️ Description
 
-The CSV2JSON repository is a tool designed to convert CSV files to JSON format. This project is for developers and data analysts who need to work with data in JSON format but have it available in CSV. The tool aims to simplify the data conversion process, making it easier to integrate CSV data into applications that require JSON.
-
-The converter is built using modern web technologies, ensuring a fast, efficient, and scalable conversion process. It provides a straightforward way to upload CSV files and download the equivalent JSON data.
+The CSV2JSON Converter is a web application designed to convert CSV (Comma Separated Values) data to JSON (JavaScript Object Notation) format. This tool is particularly useful for developers and data analysts who need to work with data in JSON format but have it available in CSV. The application provides a user-friendly interface for uploading CSV files, pasting CSV data, or using sample data to generate equivalent JSON.
 
 ## ✨ Key Features
 
-### Core Features
-- **CSV to JSON Conversion**: The primary feature of the tool is to convert CSV files into JSON format.
-- **File Upload**: Users can upload CSV files directly to the tool.
-- **JSON Output**: The tool generates JSON output that can be easily downloaded or used directly in applications.
+### Core Functionality
+- **CSV to JSON Conversion**: The application takes CSV data as input and converts it into JSON format.
+- **File Upload**: Users can upload CSV files directly to the application for conversion.
+- **CSV Input**: A textarea is provided for users to paste their CSV data manually.
+- **Sample Data**: A sample CSV data option is available for users to test the conversion feature.
 
-### Technical Features
-- **React Frontend**: The user interface is built with React, providing an interactive and responsive experience.
-- **Vite Build Tool**: Vite is used for building and serving the application, ensuring fast development and production builds.
-- **ESLint for Linting**: The project uses ESLint for code linting, maintaining code quality and consistency.
+### User Interface
+- **Json Output**: The converted JSON data is displayed in a readable format.
+- **Copy and Download**: Users can copy the JSON data to their clipboard or download it as a JSON file.
+
+### Settings
+- **Auto-Detect Settings**: The application allows users to auto-detect delimiters and select from a list of common delimiters.
 
 ## 🗂️ Folder Structure
 
 ```mermaid
 graph TD;
-src-->App.jsx;
+src-->components;
+src-->utils;
+components-->CsvInput;
+components-->JsonOutput;
+components-->SampleData;
+components-->DropZone;
+components-->AutoDetectSettings;
+utils-->useCsvJson;
+src-->App;
 src-->main.jsx;
-src-->index.css;
-public-->index.html;
 ```
 
 ## 🛠️ Tech Stack
 
+![Vite](https://img.shields.io/badge/Vite-646cff?logo=vite&logoColor=white&style=for-the-badge)
 ![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=white&style=for-the-badge)
-![Vite](https://img.shields.io/badge/Vite-646CBD?logo=vite&logoColor=white&style=for-the-badge)
-![ESLint](https://img.shields.io/badge/ESLint-4B088E?logo=eslint&logoColor=white&style=for-the-badge)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?logo=tailwind-css&logoColor=white&style=for-the-badge)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=white&style=for-the-badge)
 
 ## ⚙️ Setup Instructions
 
-To run the project locally, follow these steps:
+To run the CSV2JSON Converter locally, follow these steps:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/ebhay/CSV2JSON.git
-   ```
+git clone https://github.com/ebhay/CSV2JSON.git
+```
 2. **Navigate to the Project Directory**:
    ```bash
-   cd CSV2JSON
-   ```
+cd CSV2JSON
+```
 3. **Install Dependencies**:
    ```bash
-   npm install
-   ```
+npm install
+```
 4. **Start the Development Server**:
    ```bash
-   npm run dev
-   ```
+npm run dev
+```
 5. **Open the Application**:
-   Open your web browser and navigate to `http://localhost:5173` to use the application.
+   Navigate to `http://localhost:5173` in your web browser to use the application.
 
-## 🤔 Known Issues and Future Development
+## 🤖 GitHub Actions
 
-The current version of the CSV2JSON converter provides basic functionality. Future developments may include:
-- Support for larger CSV files
-- More advanced data transformation options
-- Integration with data storage solutions
+The repository utilizes GitHub Actions for continuous integration and deployment. Workflows are set up to:
+- **Lint and Format Code**: Run ESLint and format code on push events.
+- **Build and Deploy**: Automatically build and deploy the application to a hosting platform on successful pull requests to the main branch.
 
-## 📁 File Structure Explanation
-
-- `vite.config.js`: Configuration file for Vite, defining the build process.
-- `.gitignore`: Specifies files and directories ignored by Git.
-- `src/main.jsx`: Main entry point for the React application.
-- `index.html`: HTML entry point for the project.
-- `package.json`: Project metadata and dependencies.
-- `eslint.config.js`: ESLint configuration for code linting.
-- `src/App.jsx`: Defines the App component, a part of the React application.
+No specific workflow files are included in the basic template, but you can find them in the `.github/workflows` directory of the repository.
 
 
 
@@ -81,7 +79,7 @@ The current version of the CSV2JSON converter provides basic functionality. Futu
 <div align="center">
 <img src="https://avatars.githubusercontent.com/u/111756624?v=4" width="120" />
 <h3>Abhay Gupta</h3>
-<p>Passionate developer & lifelong learner, seeking to break boundaries through code.</p>
+<p>Passionate developer and lifelong learner, breaking and rebuilding code to craft seamless interactions.</p>
 </div>
 <br>
 <p align="right">
