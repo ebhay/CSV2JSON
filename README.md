@@ -1,5 +1,6 @@
 # CSV2JSON Converter
-![thumbnail](./public/assets/landingPage-edee0d51-9f68-4dbc-9c91-50395daf1b38)
+<img width="1442" height="896" alt="image" src="https://github.com/user-attachments/assets/322ef9ad-b965-4148-8f08-ce7575a74b8e" />
+
 ## 🗂️ Description
 
 The CSV2JSON Converter is a web application designed to convert CSV (Comma Separated Values) files to JSON (JavaScript Object Notation) format. This tool is useful for developers, data analysts, and anyone who needs to work with data in both CSV and JSON formats. The application provides a simple and intuitive interface for uploading CSV files, selecting delimiter options, and downloading the converted JSON data.
